@@ -417,7 +417,7 @@ int ex5_11(void)
 
 int main(void)
 {
-	/*  Ctrl+C for exercise 2, 5, 6:
+	/*  Ctrl+C for exercises:
 	 *  Exercise 1       - Any 4 digit number
 	 *  Exercise 2       - 00:60 00:23 01:23 24:23 12:23 13:23
 	 *  Exercise 6       - 013800151735 (Only VALID if the last digit is 5)
