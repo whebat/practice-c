@@ -115,36 +115,36 @@ int ex2_8(void)
 	double amount;
 	double interest;
 	double monthly;
-	double balance;
 
 	printf("Enter amount of loan: ");
 	scanf("%lf", &amount);
-	printf("\nEnter interest rate: ");
+	printf("Enter interest rate: ");
 	scanf("%lf", &interest);
-	printf("\nEnter monthly payment: ");
+	printf("Enter monthly payment: ");
 	scanf("%lf", &monthly);
+	printf("\n");
 
 	/* Calculated as per exercise example. */
-	balance = amount - monthly + (amount/100 * interest / 12);
-	printf("Balance remaining after first payment : $%.2lf\n", balance);
-	balance -= monthly + (balance/100 * interest / 12);
-	printf("Balance remaining after second payment : $%.2lf\n", balance);
-	balance -= monthly + (balance/100 * interest / 12);
-	printf("Balance remaining after third payment : $%.2lf\n", balance);
+	amount = amount - monthly + (amount/100 * interest / 12);
+	printf("Balance remaining after first payment:  $%.2lf\n", amount);
+	amount = amount - monthly + (amount/100 * interest / 12);
+	printf("Balance remaining after second payment: $%.2lf\n", amount);
+	amount = amount - monthly + (amount/100 * interest / 12);
+	printf("Balance remaining after third payment:  $%.2lf\n\n", amount);
 	return 0;
 }
 
 int main(void)
 {
-	ex2_1();
-	printf("%f\n\n", ex2_2(10.0f));
-	printf("%f\n\n", ex2_3());
-	ex2_4();
+	//~ ex2_1();
+	//~ printf("%f\n\n", ex2_2(10.0f));
+	//~ printf("%f\n\n", ex2_3());
+	//~ ex2_4();
 
 	/* Ex 2.5 & 2.6 produces different results, not sure why. */
-	ex2_5();
-	ex2_6();
-	ex2_7();
+	//~ ex2_5();
+	//~ ex2_6();
+	//~ ex2_7();
 	ex2_8();
 	return 0;
 }
